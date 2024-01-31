@@ -11,6 +11,7 @@ RUN apk --no-cache add curl openssl jq bash
 # Customization variables for certificate generation
 ARG SSL_IP
 ARG SSL_DNS
+ENV PUBLIC_IP=40.80.203.147
 
 # Generate + copy the self-signed certificate settings
 WORKDIR /certs
